@@ -15,6 +15,7 @@ namespace ArmanAuto.Data
         {
         }
 
+        
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -22,5 +23,7 @@ namespace ArmanAuto.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<ServiceType> ServiceTypes { get; set; }
     }
 }
