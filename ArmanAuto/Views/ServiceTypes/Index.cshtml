@@ -8,7 +8,7 @@
 
 <div class="form-border">
     <p>
-        <a class="btn btn-sm btn-primary" asp-acton="Create">Add New</a>
+        <a class="btn btn-sm btn-primary" asp-action="Create">Add New</a>
     </p>
     <br />
     <table class="table table-condensed table-hover">
@@ -21,6 +21,7 @@
         { 
             <tr>
                 <td>@Html.DisplayFor(m => item.Name)</td>
+                @Html.Partial("_TableButtonPartial", new IndividualButtonPartial { ServiceId = item.Id })
             </tr>
         }
         

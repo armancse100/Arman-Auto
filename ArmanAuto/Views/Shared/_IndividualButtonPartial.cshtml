@@ -1,0 +1,12 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model ArmanAuto.Models.IndividualButtonPartial
+
+<a type="button" class="@Model.ButtonType"
+   href="@Url.Action(Model.Action)@Model.ActionParameters">
+    <span class="glyphicon @Model.Glyph"></span>
+    <span class="sr-ony">@Model.Text</span>
+
+</a>
