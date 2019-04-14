@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ArmanAuto.Models.ServiceType>
+@{
+    ViewData["Title"] = "Index";
+}
+<br/>
+<h2>Manage Service Types</h2>
+<hr/>
+
+<div class="form-border">
+    <p>
+        <a class="btn btn-sm btn-primary" asp-acton="Create">Add New</a>
+    </p>
+    <br />
+    <table class="table table-condensed table-hover">
+        <tr>
+            <th> @Html.DisplayNameFor(m => m.Name)</th>
+            <th></th>
+            <th></th>
+        </tr>
+        @foreach(var item in Model)
+        { 
+            <tr>
+                <td>@Html.DisplayFor(m => item.Name)</td>
+            </tr>
+        }
+        
+
+
+    </table>
+
+</div>
+
