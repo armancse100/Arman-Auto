@@ -21,7 +21,7 @@
         { 
             <tr>
                 <td>@Html.DisplayFor(m => item.Name)</td>
-                @Html.Partial("_TableButtonPartial", new IndividualButtonPartial { ServiceId = item.Id })
+                 <td>@Html.Partial("_TableButtonPartial", new IndividualButtonPartial { ServiceId = item.Id })</td>
             </tr>
         }
         

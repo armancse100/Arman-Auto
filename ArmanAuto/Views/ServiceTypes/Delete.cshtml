@@ -1,0 +1,32 @@
+﻿@model ArmanAuto.Models.ServiceType
+@{
+    ViewData["Title"] = "Delete";
+}
+<br />
+<h2>Add Service Type</h2>
+<hr />
+<br />
+<form asp-action="Delete">
+    <div class="form-border">
+      
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-1">
+                    <label asp-for="Name" class="custon-label"></label>
+                </div>
+                <div class="col-sm-4">
+                    <input asp-for="Name" class="form-control" disabled/>
+
+                </div>
+            </div>
+         
+        </div>
+        <br/>
+        <div class="form-group">
+            <input type="submit" value="Delete" class="btn btn-sm btn-primary"/>
+            <a asp-action="Index" class="btn btn-sm btn-success">Go to List</a>
+        </div>
+
+     </div>
+</form>
+
